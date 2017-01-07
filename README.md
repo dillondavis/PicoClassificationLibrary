@@ -1,7 +1,7 @@
 # PicoClassificationLibrary
 Implementation of fundamental classification algorithms
 
-  # Classifiers:
+  # Classifiers
   
     # Decision Tree (Python)
     Implemented with multi-way branching and Gini Index as the attribute selection measure.
@@ -11,13 +11,13 @@ Implementation of fundamental classification algorithms
     Implemented with the aforementioned decision tree, bagging, random sampling with replacement, 128 trees, and log(number of remaining attributes) attributes considered for branching.
     example usage: python src/RandomForest.py training_data testing_data
 
-    # Naive Bayes (Scala)
+    # Naive Bayes (Clojure)
     Coming soon
     
-  # Data:
-    Classifiers are built assuming training and testing data are in LIBSVM format
+  # Data<br>
+    Classifiers are built assuming training and testing data are in LIBSVM format<br>
    
-  # Results:
+  # Results<br>
     Running classifiers will output a confusion matrix corresponding to classification of the testing data and a metrics file
     including accuracy, Sensitivity, Specificity, Precision, Recall, F-1 Score, F-Half Score, and F-2 Score.
     
