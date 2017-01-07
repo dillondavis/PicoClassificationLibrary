@@ -2,6 +2,7 @@
 Implementation of fundamental classification algorithms
 
   # Classifiers
+  
     # Decision Tree (Python)
     Implemented with multi-way branching and Gini Index as the attribute selection measure.
     example usage: python src/DecisionTree.py training_data testing_data
