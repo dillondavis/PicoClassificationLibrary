@@ -8,7 +8,7 @@ Implementation of fundamental classification algorithms
     example usage: python src/DecisionTree.py training_data testing_data
 
     # Random Forest (Python)
-    Implemented with the aforementioned decision tree, bagging, random sampling with replacement, 128 trees, log(number of remaining attributes) attributes considered for branching.
+    Implemented with the aforementioned decision tree, bagging, random sampling with replacement, 128 trees, and log(number of remaining attributes) attributes considered for branching.
     example usage: python src/RandomForest.py training_data testing_data
 
     # Naive Bayes (Scala)
