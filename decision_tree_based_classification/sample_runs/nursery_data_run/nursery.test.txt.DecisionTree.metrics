@@ -1,0 +1,39 @@
+../sample_runs/nursery_data_run/nursery.test.txt.DecisionTree Metrics
+Accuracy: 0.973289500719
+
+Target Label: 1
+	Sensitivity: 0.960526315789
+	Specificity: 0.979516967288
+	Precision: 0.958125
+	Recall: 0.960526315789
+	F1 Score: 0.959324155194
+	FHalf Score: 0.958604302151
+	F2 Score: 0.96004509018
+
+Target Label: 2
+	Sensitivity: 0.746153846154
+	Specificity: 0.979522904792
+	Precision: 0.5
+	Recall: 0.746153846154
+	F1 Score: 0.598765432099
+	FHalf Score: 0.5353200883
+	F2 Score: 0.679271708683
+
+Target Label: 3
+	Sensitivity: 0.977864583333
+	Specificity: 0.971179825878
+	Precision: 0.939924906133
+	Recall: 0.977864583333
+	F1 Score: 0.958519463944
+	FHalf Score: 0.947275479314
+	F2 Score: 0.970033583053
+
+Target Label: 4
+	Sensitivity: 0.999377722464
+	Specificity: 0.959865196078
+	Precision: 0.924582613702
+	Recall: 0.999377722464
+	F1 Score: 0.960526315789
+	FHalf Score: 0.938632378726
+	F2 Score: 0.983466013472
+

@@ -1,0 +1,30 @@
+../sample_runs/scale_data_run/balance-scale.test.txt.RandomForest Metrics
+Accuracy: 0.751111111111
+
+Target Label: 1
+	Sensitivity: 0.0416666666667
+	Specificity: 0.829268292683
+	Precision: 0.0277777777778
+	Recall: 0.0416666666667
+	F1 Score: 0.0333333333333
+	FHalf Score: 0.0297619047619
+	F2 Score: 0.0378787878788
+
+Target Label: 2
+	Sensitivity: 0.833333333333
+	Specificity: 0.682926829268
+	Precision: 0.685483870968
+	Recall: 0.833333333333
+	F1 Score: 0.752212389381
+	FHalf Score: 0.710702341137
+	F2 Score: 0.798872180451
+
+Target Label: 3
+	Sensitivity: 0.831683168317
+	Specificity: 0.685483870968
+	Precision: 0.682926829268
+	Recall: 0.831683168317
+	F1 Score: 0.75
+	FHalf Score: 0.70826306914
+	F2 Score: 0.796963946869
+

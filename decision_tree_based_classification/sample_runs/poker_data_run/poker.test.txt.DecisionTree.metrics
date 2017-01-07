@@ -1,0 +1,21 @@
+../sample_runs/poker_data_run/poker.test.txt.DecisionTree Metrics
+Accuracy: 0.589970501475
+
+Target Label: 1
+	Sensitivity: 0.712418300654
+	Specificity: 0.333333333333
+	Precision: 0.69133192389
+	Recall: 0.712418300654
+	F1 Score: 0.701716738197
+	FHalf Score: 0.695448745215
+	F2 Score: 0.708098744045
+
+Target Label: 2
+	Sensitivity: 0.333333333333
+	Specificity: 0.712418300654
+	Precision: 0.356097560976
+	Recall: 0.333333333333
+	F1 Score: 0.344339622642
+	FHalf Score: 0.351299326275
+	F2 Score: 0.337650323774
+

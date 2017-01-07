@@ -1,0 +1,21 @@
+../sample_runs/led_data_run/led.test.txt.DecisionTree Metrics
+Accuracy: 0.799823633157
+
+Target Label: 1
+	Sensitivity: 0.80056980057
+	Specificity: 0.799489144317
+	Precision: 0.641552511416
+	Recall: 0.80056980057
+	F1 Score: 0.712294043093
+	FHalf Score: 0.66809320019
+	F2 Score: 0.762757871878
+
+Target Label: 2
+	Sensitivity: 0.799489144317
+	Specificity: 0.80056980057
+	Precision: 0.899425287356
+	Recall: 0.799489144317
+	F1 Score: 0.846517917512
+	FHalf Score: 0.877488085226
+	F2 Score: 0.817659352142
+

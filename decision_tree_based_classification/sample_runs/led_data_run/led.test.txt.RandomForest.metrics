@@ -1,0 +1,21 @@
+../sample_runs/led_data_run/led.test.txt.RandomForest Metrics
+Accuracy: 0.855379188713
+
+Target Label: 1
+	Sensitivity: 0.754985754986
+	Specificity: 0.900383141762
+	Precision: 0.772594752187
+	Recall: 0.754985754986
+	F1 Score: 0.763688760807
+	FHalf Score: 0.76900754498
+	F2 Score: 0.75844304522
+
+Target Label: 2
+	Sensitivity: 0.900383141762
+	Specificity: 0.754985754986
+	Precision: 0.891276864728
+	Recall: 0.900383141762
+	F1 Score: 0.895806861499
+	FHalf Score: 0.893083354446
+	F2 Score: 0.898547030334
+

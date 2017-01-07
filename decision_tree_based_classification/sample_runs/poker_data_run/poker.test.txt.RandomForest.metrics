@@ -1,0 +1,21 @@
+../sample_runs/poker_data_run/poker.test.txt.RandomForest Metrics
+Accuracy: 0.685840707965
+
+Target Label: 1
+	Sensitivity: 0.989106753813
+	Specificity: 0.0502283105023
+	Precision: 0.68580060423
+	Recall: 0.989106753813
+	F1 Score: 0.809991079393
+	FHalf Score: 0.73060830383
+	F2 Score: 0.908726981585
+
+Target Label: 2
+	Sensitivity: 0.0502283105023
+	Specificity: 0.989106753813
+	Precision: 0.6875
+	Recall: 0.0502283105023
+	F1 Score: 0.0936170212766
+	FHalf Score: 0.194346289753
+	F2 Score: 0.0616591928251
+

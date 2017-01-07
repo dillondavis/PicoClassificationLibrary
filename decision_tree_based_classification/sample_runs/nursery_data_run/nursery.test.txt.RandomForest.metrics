@@ -1,0 +1,39 @@
+../sample_runs/nursery_data_run/nursery.test.txt.RandomForest Metrics
+Accuracy: 0.974111362235
+
+Target Label: 1
+	Sensitivity: 0.971804511278
+	Specificity: 0.975236930602
+	Precision: 0.950367647059
+	Recall: 0.971804511278
+	F1 Score: 0.960966542751
+	FHalf Score: 0.954579025111
+	F2 Score: 0.96744011976
+
+Target Label: 2
+	Sensitivity: 0.569230769231
+	Specificity: 0.985222714798
+	Precision: 0.513888888889
+	Recall: 0.569230769231
+	F1 Score: 0.540145985401
+	FHalf Score: 0.524079320113
+	F2 Score: 0.557228915663
+
+Target Label: 3
+	Sensitivity: 0.983723958333
+	Specificity: 0.969678775143
+	Precision: 0.937344913151
+	Recall: 0.983723958333
+	F1 Score: 0.959974587039
+	FHalf Score: 0.94626753507
+	F2 Score: 0.97408457968
+
+Target Label: 4
+	Sensitivity: 0.999377722464
+	Specificity: 0.961090686275
+	Precision: 0.926716676284
+	Recall: 0.999377722464
+	F1 Score: 0.961676646707
+	FHalf Score: 0.940391146504
+	F2 Score: 0.983948045583
+

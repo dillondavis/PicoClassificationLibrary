@@ -1,0 +1,30 @@
+../sample_runs/scale_data_run/balance-scale.test.txt.DecisionTree Metrics
+Accuracy: 0.64
+
+Target Label: 1
+	Sensitivity: 0.0416666666667
+	Specificity: 0.707317073171
+	Precision: 0.016393442623
+	Recall: 0.0416666666667
+	F1 Score: 0.0235294117647
+	FHalf Score: 0.0186567164179
+	F2 Score: 0.031847133758
+
+Target Label: 2
+	Sensitivity: 0.794117647059
+	Specificity: 0.512195121951
+	Precision: 0.574468085106
+	Recall: 0.794117647059
+	F1 Score: 0.666666666667
+	FHalf Score: 0.608108108108
+	F2 Score: 0.737704918033
+
+Target Label: 3
+	Sensitivity: 0.623762376238
+	Specificity: 0.653225806452
+	Precision: 0.594339622642
+	Recall: 0.623762376238
+	F1 Score: 0.608695652174
+	FHalf Score: 0.6
+	F2 Score: 0.617647058824
+
