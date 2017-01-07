@@ -19,7 +19,7 @@ Implementation of fundamental classification algorithms
    
   # Results<br>
     Running classifiers will output a confusion matrix corresponding to classification of the testing data and a metrics file
-    including accuracy, Sensitivity, Specificity, Precision, Recall, F-1 Score, F-Half Score, and F-2 Score.
+    including Accuracy, Sensitivity, Specificity, Precision, Recall, F-1 Score, F-Half Score, and F-2 Score.
     
     
    
