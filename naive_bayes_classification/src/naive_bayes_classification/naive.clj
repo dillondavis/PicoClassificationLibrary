@@ -1,0 +1,60 @@
+(ns naive_bayes_classification.naive
+  (:require [clojure.data.csv :as csv])
+  (:require [clojure.java.io :as io]))
+
+(defn get_data [filename]
+  (with-open [in-file (io/reader filename)]
+    (doall
+      (csv/read-csv in-file))))
+
+
+(defn get_classes [data]
+  (def class_index (- (count (first data)) 1))
+  (into [] (set (for [tup data] (nth tup class_index)))))
+
+
+(defn separate_by_class [training_data classes]
+  (def class_index (- (count (first training_data)) 1))
+  (for [class classes] (filter #(= class (nth % class_index)) training_data)))
+
+
+(defn get_data_stats [training_tuples]
+  (def class_attr_index (- (count (first training_tuples)) 1))
+  (def training_data (map #(drop-last 1 %) training_tuples))
+  (def num_tuples (- (count training_data) 1))
+  (def attribute_averages (map #(/ % num_tuples)(reduce #(map + %1 %2) training_data)))
+  (def variances (reduce #(map + %1 %2) (for [tup training_data] (map #(Math/pow (- %1 %2) 2) tup attribute_averages))))
+  (def stdevs (map #(Math/sqrt %) variances))
+  (list attribute_averages stdevs))
+
+
+(defn gaussian_prob [x mean stdev]
+  (def exponent (Math/exp (/ (* (Math/pow (- x mean) 2) -1) (* 2 (Math/pow stdev 2)))))
+  (* (/ 1 (* (Math/sqrt (* 2 (Math/PI))) stdev))) exponent)
+
+
+(defn get_class_probability [tup class_stats]
+  (reduce * (map gaussian_prob tup (first class_stats) (second class_stats))))
+
+
+(defn get_tup_class [tup stats_by_class classes]
+  (def probs (map #(get_class_probability tup %) stats_by_class))
+  (def max_prob (apply max probs))
+  (def class_index (first (for [i (range (count probs)) :when (= (nth probs i) max_prob)] i)))
+  (nth classes class_index))
+
+
+(defn -main []
+  (def data (for [tup (get_data "data.csv")] (map read-string tup)))
+  (def classes (get_classes data))
+
+  (def training_tuples (take (int (* 0.67 (count data))) data))
+  (def test_tuples (take-last (- (count data) (int (* 0.67 (count data)))) data))
+  (def test_data (map #(drop-last 1 %) test_tuples))
+  (def test_classes (map #(take-last 1 %) test_tuples))
+
+  (def data_by_classes (separate_by_class training_tuples classes))
+  (def stats_by_class (map get_data_stats data_by_classes))
+  (def result_classes (map #(get_tup_class % stats_by_class classes) test_data))
+  (println (map first test_classes))
+  (println result_classes))
