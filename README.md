@@ -12,10 +12,14 @@ Implementation of fundamental classification algorithms
     example usage: python src/RandomForest.py training_data testing_data
 
     # Naive Bayes (Clojure)
-    Coming soon
+    Implementation of Gaussian Naive Bayes in Clojure
+    
+    # Neural Network (Clojure)
+    In progress
     
   # Data<br>
-    Classifiers are built assuming training and testing data are in LIBSVM format<br>
+    Python Classifiers are built assuming training and testing data are in LIBSVM format<br>
+    Naive Bayes assumes basic CSV format
    
   # Results<br>
     Running classifiers will output a confusion matrix corresponding to classification of the testing data and a metrics file
